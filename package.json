@@ -1,0 +1,11 @@
+{
+  "name": "projeto11-tweteroo",
+  "version": "1.0.0",
+  "description": "projeto back-end",
+  "main": "index.js",
+  "author": "\"rafinha_fern@hotmail.com\"",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
