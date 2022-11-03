@@ -1,11 +1,14 @@
 {
-  "name": "projeto11-tweteroo",
+  "name": "tweteroo",
   "type": "module",
-  "version": "1.0.0",
-  "description": "projeto back-end",
+  "version": "1.0.1",
+  "description": "first back-end project",
   "main": "app.js",
-  "author": "\"rafinha_fern@hotmail.com\"",
+  "author": "\"raferdev@outlook.com\"",
   "license": "ISC",
+  "scripts": {
+    "start":"node app.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
