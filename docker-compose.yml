@@ -1,0 +1,11 @@
+services:
+  back-tweteroo:
+    container_name: back-tweteroo
+    build: .
+    restart: always
+    env_file:
+     - .env
+    expose:
+      - $PORT
+    ports:
+      - $PORT:$PORT
