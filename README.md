@@ -21,7 +21,7 @@
 
 <p align="center"> 
 
-This is a simply backend content build using NodeJS, Express, witch was my first experience working on back-end. I emproved this project with this readme, docker and docker-compose because i feel this project is the start point understanding the power on my hands.
+This is a simply backend content build using NodeJS, Express, which was my first experience working on back-end. I emproved this project with this readme, docker and docker-compose because i feel this project is the start point understanding the power on my hands.
 
 </p>
 
