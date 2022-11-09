@@ -15,10 +15,14 @@
 </div>
 
 ---
-
+<div align="center">
 <img align="center" src="./readme-banner.png">
+</div>
 
-<p align="center"> This is a simply backend content build using NodeJS, Express, witch was my first experience working on back-end. I emproved this project with this readme, docker and docker-compose because i feel this project is the start point understanding the power on my hands.
+<p align="center"> 
+
+This is a simply backend content build using NodeJS, Express, witch was my first experience working on back-end. I emproved this project with this readme, docker and docker-compose because i feel this project is the start point understanding the power on my hands.
+
 </p>
 
 ## 📝 Table of Contents
