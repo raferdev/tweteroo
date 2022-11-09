@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://raferdev.github.io/driveneats/">
- <img width=200px height=200px src="./redme.png" alt="Project logo"></a>
+ <img width=200px height=200px src="./readme.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">DrivenEats</h3>
+<h3 align="center">Tweteroo</h3>
 
 <div align="center">
 
@@ -16,9 +16,9 @@
 
 ---
 
-<img src="./readme-display.png">
+<img src="./readme-banner.png">
 
-<p align="center"> This is a HTML + CSS + Javascript project based on <a href="https://www.ifood.com.br/">Ifood App</a> style with focus on training javascript logic and interation with another apps.
+<p align="center"> This is a simply backend content build using NodeJS, Express, witch was my first experience working on back-end. I emproved this project with this readme, docker and docker-compose because i feel this project is the start point understanding the power on my hands.
 </p>
 
 ## 📝 Table of Contents
@@ -31,11 +31,10 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project i use to training the Javascript logic. I had to integrate logic with css styles to give for users the better experience. Isn't a reponsive layout and its build to better experience is in 600px width scale.
-
+This project is one POC of how backend is usefull to frontend. It return and receive objects to emulate login and tweets. And that is it, simple but the first.
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-You can clone the project and start on your local host or open the site hospeded <a href="https://raferdev.github.io/driveneats/">here</a>
+You can clone the project and start on your local host.
 
 Clone
 
@@ -44,14 +43,60 @@ Clone
  ```
 
 ## 🎈 Usage <a name="usage"></a>
-You can right click and go to option inspect on your browser to use the options sizes of display and set the better width. You can select options and see the logic, when you select 3 options and click on 'Fechar Pedido', you will be redirected to whatsapp website with custom message.
+
+Go to project path 
+```
+cd driveneats
+```
+Create env file: Open a note editor or other editor do you prefeer, create this variables like below and save with name '.env'
+```
+PORT=5000
+HTTP=http://localhost:5000/
+```
+You can change the PORT and HTTP value
+
+Start docker container using 
+```
+docker-compose up
+```
+You will see one message like 'Hello i'm running on port = (port on env file)' on the terminal. And you can make a get request on 'http:localhost:(port)/tweets' and receive one object like image you saw on the initial part of this readme.
+
+GET /tweets - return array of objects
+
+```
+[
+  {
+  username:"Sandy Cheeks",
+  avatar:"http://localhost:4783//images/sandy-cheeks.jpg"
+  tweet:"Hellow, good to see you here. You are awesome.},
+]
+```
+
+POST /tweets - object format proposal below (but backend dont verify the object format)
+```
+  {
+  username:"",
+  avatar:""
+  tweet: ""
+  }
+```
+POST /login - object format proposal below (but backend dont verify the object format)
+```
+{
+  username:"",
+  password:""
+}
+```
+Will return 'OK'
+
+ANNNDD that is it... I said was my first project.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) - Markup Language
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - Style Language
-- [JS](https://developer.mozilla.org/pt-BR/docs/Web/javascript) - Interative Language
+- [NodeJS](https://nodejs.org/en/docs/) - Backend Language
+- [Express](https://expressjs.com/pt-br/) - Node Framework
+- [Docker](https://www.docker.com/) - Container Technology
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@raferdev](https://github.com/raferdev) - Idea & Initial work
+- [@raferdev](https://github.com/raferdev)
